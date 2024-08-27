@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+height: 100svh;
+background-image: url(./bg-desktop.svg);
+background-repeat: no-repeat;
+background-size: cover;
+background-color: hsl(257, 40%, 49%);
+}
+.all{
+    padding: 40px 40px 20px;
+}
+main{
+    display: flex;
+    padding: 50px 0px 30px;
+} 
+.big{
+    width: 680px;
+}
+.title{
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+    font-size: 36px;
+    color: white;
+}
+.paragraph{
+    margin-top: 20px;
+     font-family: "Open Sans", sans-serif;
+     font-weight: 400;
+     color : rgba(255, 255, 255, 0.478)
+}
+button{
+    margin-top: 20px;
+    padding: 10px 50px;
+    border-radius: 24px;
+    border: solid white;
+    background-color: white;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    color: grey;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.151);
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    border:  solid  hsl(300, 69%, 71%);
+     box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.151);
+}
+ .card{
+    padding-top:40px;
+    
+    padding-left: 40px;
+ }
+ .facebook,.twitter,.insta{
+    color: white;
+    border-radius: 50%;
+    border: solid white 1px;
+ }
+ .facebook{
+    padding: 5px 8px;
+ }
+ .insta,.twitter{
+    padding: 5px 5px;
+ }
+  footer{
+    display: flex;
+    justify-content: flex-end;
+    gap:10px
+  }
+ .facebook:hover,.twitter:hover,.insta:hover{
+    color: hsl(300, 69%, 71%) ;
+    border-color:  hsl(300, 69%, 71%);
+ }
+ @media (max-width:600px){
+     body{
+        background-image: url(./bg-mobile.svg);
+         background-repeat: no-repeat;
+         background-size:contain;   
+          }
+     main{
+        display: flex;
+        flex-direction: column;
+     }
+     .big{
+        width:100%;
+     }
+     .title{
+        font-size: 24px;
+     }
+     .paragraph{
+        font-size: 16px;
+        font-weight: 600;
+     }
+     .card{
+        text-align: center;
+        padding: 40px 0;
+        
+     }
+     button{
+        padding: 10px 70px;
+     }
+     footer{
+        justify-content: center;
+     }
+      .logo{
+        width: 150px;
+      }
+ }
